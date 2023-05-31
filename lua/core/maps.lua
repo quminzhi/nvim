@@ -75,7 +75,7 @@ keymap.set('n', 'I', '<cmd>Lspsaga hover_doc<cr>', { silent = true })
 -- go to definition
 -- use C-t to go back to where left off
 keymap.set('n', ']d', '<cmd>Lspsaga lsp_finder<cr>', { silent = true })
-keymap.set('n', ']g', '<cmd>Lspsaga goto_definition<cr>', { silent = true })
+keymap.set('n', '[d', '<cmd>Lspsaga goto_definition<cr>', { silent = true })
 keymap.set('n', '[p', '<cmd>Lspsaga peek_definition<cr>', { silent = true })
 keymap.set('n', '[o', '<cmd>Lspsaga outline<cr>', { silent = true })
 keymap.set('n', ']e', '<cmd>Lspsaga diagnostic_jump_prev<cr>', { silent = true })

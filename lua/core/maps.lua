@@ -41,6 +41,9 @@ keymap.set('i', 'jf', '<esc>', { silent = true })
 keymap.set('n', '<c-a>', 'gg<S-v>G', { silent = true })
 keymap.set('n', '<Leader>n', ':nohlsearch<cr>', { silent = true })
 
+keymap.set('n', '<c-j>', '<c-d>', { silent = true })
+keymap.set('n', '<c-k>', '<c-u>', { silent = true })
+
 -- Packer
 keymap.set('n', '<Leader>pi', '<cmd>PackerInstall<cr>')
 keymap.set('n', '<Leader>ps', '<cmd>PackerSync<cr>')

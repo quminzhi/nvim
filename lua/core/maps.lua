@@ -74,8 +74,8 @@ keymap.set('n', 'I', '<cmd>Lspsaga hover_doc<cr>', { silent = true })
 
 -- go to definition
 -- use C-t to go back to where left off
-keymap.set('n', ']d', '<cmd>Lspsaga lsp_finder<cr>', { silent = true })
-keymap.set('n', '[d', '<cmd>Lspsaga goto_definition<cr>', { silent = true })
+keymap.set('n', '[d', '<cmd>Lspsaga lsp_finder<cr>', { silent = true })
+keymap.set('n', ']d', '<cmd>Lspsaga goto_definition<cr>', { silent = true })
 keymap.set('n', '[p', '<cmd>Lspsaga peek_definition<cr>', { silent = true })
 keymap.set('n', '[o', '<cmd>Lspsaga outline<cr>', { silent = true })
 keymap.set('n', ']e', '<cmd>Lspsaga diagnostic_jump_prev<cr>', { silent = true })
@@ -102,8 +102,8 @@ keymap.set('x', '<Leader>//', '<Plug>kommentary_visual_default', { silent = true
 -- bookmark
 -- mm: add/remove a bookmark at current line
 -- mi: add/edit/remove an annotation at current line
-keymap.set('n', 'md', "<cmd>lua require('telescope').extensions.vim_bookmarks.all()<cr>")
-keymap.set('n', 'mf', "<cmd>lua require('telescope').extensions.vim_bookmarks.current_file()<cr>")
+keymap.set('n', '[m', "<cmd>lua require('telescope').extensions.vim_bookmarks.all()<cr>")
+keymap.set('n', ']m', "<cmd>lua require('telescope').extensions.vim_bookmarks.current_file()<cr>")
 keymap.set('n', 'mc', '<cmd>BookmarkClearAll<cr>', { silent = true })
 
 -- formatting

@@ -8,6 +8,8 @@
 --   })
 -- end
 
+local on_attach
+
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 capabilities.offsetEncoding = "utf-8"
 
@@ -35,7 +37,6 @@ require("lspconfig").bashls.setup {
 require("lspconfig").clangd.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  
   filetypes = {"c", "cpp"},
   settings = {
   },

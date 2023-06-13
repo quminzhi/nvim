@@ -84,7 +84,7 @@ keymap.set('n', '[o', '<cmd>Lspsaga outline<cr>', { silent = true })
 keymap.set('n', ']e', '<cmd>Lspsaga diagnostic_jump_prev<cr>', { silent = true })
 keymap.set('n', '[e', '<cmd>Lspsaga diagnostic_jump_next<cr>', { silent = true })
 -- go to references
-keymap.set('n', '[r', require('telescope.builtin').lsp_references, {})
+keymap.set('n', ']r', require('telescope.builtin').lsp_references, {})
 keymap.set('n', '[c', '<cmd>Lspsaga code_action<cr>', { silent = true })
 keymap.set('n', 'rn', '<cmd>Lspsaga rename<cr>', { silent = true })
 

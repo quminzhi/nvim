@@ -12,7 +12,7 @@ opt.titlestring = "%F - 0xcc"
 opt.scrolloff = 5
 opt.sidescrolloff = 5
 
-opt.hlsearch = true
+opt.hlsearch = false
 opt.incsearch = true
 
 opt.mouse = 'a'

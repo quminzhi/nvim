@@ -20,6 +20,7 @@ keymap.set('n', '<leader>h', '<cmd>wincmd h<cr>', { silent = true })
 keymap.set('n', '<leader>l', '<cmd>wincmd l<cr>', { silent = true })
 
 keymap.set('n', ',,', '<cmd>w<cr>', { silent = true })
+keymap.set('n', ',.', '<cmd>q<cr>', { silent = true })
 
 -- key map
 keymap.set('n', 'Z', '')

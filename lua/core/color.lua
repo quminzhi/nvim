@@ -1,10 +1,10 @@
 vim.g.everforest_diagnostic_line_highlight = 1
 
 local profile = os.getenv("ITERM_PROFILE")
-if profile == "light" then
-  vim.cmd('colorscheme onehalflight')
-else
+if profile == "dark" then
   vim.cmd('colorscheme everforest')
+else
+  vim.cmd('colorscheme github_dark_default')
 end
 
 vim.fn.sign_define({

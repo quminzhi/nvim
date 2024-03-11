@@ -74,13 +74,6 @@ return require('packer').startup(function(use)
     }
   }
 
-  use {
-    "akinsho/toggleterm.nvim", tag = '*',
-    config = function()
-      require("toggleterm").setup()
-    end
-  }
-
   -- text operations
   use 'windwp/nvim-autopairs'
   use 'mg979/vim-visual-multi'
@@ -106,8 +99,9 @@ return require('packer').startup(function(use)
 
   -- theme
   use 'sainnhe/everforest'
-  use 'xiyaowong/nvim-transparent'
   use 'quminzhi/onehalf-vim'
+  use 'projekt0n/github-nvim-theme'
+  use 'xiyaowong/nvim-transparent'
   use {
     "folke/todo-comments.nvim",
     requires = "nvim-lua/plenary.nvim",

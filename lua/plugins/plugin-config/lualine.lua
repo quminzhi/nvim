@@ -1,9 +1,9 @@
 local profile = os.getenv("ITERM_PROFILE")
 local theme
-if profile == "light" then
-  theme = 'auto'
-else
+if profile == "dark" then
   theme = 'everforest'
+else
+  theme = 'seoul256'
 end
 
 require('lualine').setup {

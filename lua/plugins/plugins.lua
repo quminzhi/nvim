@@ -14,7 +14,7 @@ local packer_bootstrap = ensure_packer()
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
-  -- lsp configure
+  -- LSP configure
   use {
     'WhoIsSethDaniel/mason-tool-installer.nvim',
     'williamboman/mason.nvim',
@@ -31,6 +31,7 @@ return require('packer').startup(function(use)
     tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
 
+  -- Code highlighting
   use {
     'nvim-treesitter/nvim-treesitter',
     'p00f/nvim-ts-rainbow',

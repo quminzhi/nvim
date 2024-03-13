@@ -19,9 +19,6 @@ keymap.set('n', '<leader>j', '<cmd>wincmd j<cr>', { silent = true })
 keymap.set('n', '<leader>h', '<cmd>wincmd h<cr>', { silent = true })
 keymap.set('n', '<leader>l', '<cmd>wincmd l<cr>', { silent = true })
 
-keymap.set('n', ',,', '<cmd>w<cr>', { silent = true })
-keymap.set('n', ',.', '<cmd>q<cr>', { silent = true })
-
 -- key map
 keymap.set('n', 'Z', '')
 keymap.set('n', 'ZZ', '')
@@ -70,31 +67,21 @@ keymap.set('n', 'zr', require('ufo').openAllFolds, { silent = true })
 keymap.set('n', 'zm', require('ufo').closeAllFolds, { silent = true })
 
 -- lspsaga
-keymap.set('n', 'I', '<cmd>Lspsaga hover_doc<cr>', { silent = true })
-
--- vim.keymap.set('n', ']h', builtin.help_tags, {})  -- telescope.lua
-
--- go to definition
--- use C-t to go back to where left off
 keymap.set('n', '[d', '<cmd>Lspsaga lsp_finder<cr>', { silent = true })
-keymap.set('n', ']d', '<cmd>Lspsaga goto_definition<cr>', { silent = true })
+keymap.set('n', '[i', '<cmd>Lspsaga hover_doc<cr>', { silent = true })
 keymap.set('n', '[p', '<cmd>Lspsaga peek_definition<cr>', { silent = true })
 keymap.set('n', '[o', '<cmd>Lspsaga outline<cr>', { silent = true })
-keymap.set('n', ']e', '<cmd>Lspsaga diagnostic_jump_prev<cr>', { silent = true })
-keymap.set('n', '[e', '<cmd>Lspsaga diagnostic_jump_next<cr>', { silent = true })
--- go to references
+keymap.set('n', '[e', '<cmd>Lspsaga diagnostic_jump_prev<cr>', { silent = true })
+keymap.set('n', ']e', '<cmd>Lspsaga diagnostic_jump_next<cr>', { silent = true })
+keymap.set('n', ']g', '<cmd>Lspsaga goto_definition<cr>', { silent = true })
 keymap.set('n', ']r', require('telescope.builtin').lsp_references, {})
-keymap.set('n', '[c', '<cmd>Lspsaga code_action<cr>', { silent = true })
+keymap.set('n', ']c', '<cmd>Lspsaga code_action<cr>', { silent = true })
+
 keymap.set('n', 'rn', '<cmd>Lspsaga rename<cr>', { silent = true })
-
-keymap.set('n', '[[', '')
-keymap.set('n', ']]', '')
-
-keymap.set('n', '<Leader>,', '<cmd>ToggleDiag<cr>', { silent = true })
 
 -- telescope
 keymap.set('n', ']s', '<cmd>Telescope live_grep<cr>', { silent = true })
-keymap.set('n', ']t', '<cmd>Telescope treesitter<cr>', { silent = true })
+keymap.set('n', ']d', '<cmd>Telescope treesitter<cr>', { silent = true })
 keymap.set('n', ']f', '<cmd>Telescope find_files<cr>', { silent = true })
 
 -- comment
@@ -104,8 +91,8 @@ keymap.set('x', '<Leader>//', '<Plug>kommentary_visual_default', { silent = true
 -- bookmark
 -- mm: add/remove a bookmark at current line
 -- mi: add/edit/remove an annotation at current line
+-- ma: search bookmarks
 keymap.set('n', '[m', "<cmd>lua require('telescope').extensions.vim_bookmarks.all()<cr>")
-keymap.set('n', ']m', "<cmd>lua require('telescope').extensions.vim_bookmarks.current_file()<cr>")
 keymap.set('n', 'mc', '<cmd>BookmarkClearAll<cr>', { silent = true })
 
 -- formatting
@@ -113,4 +100,9 @@ keymap.set('n', '<Leader>fw', 'gq}', { silent = true })
 keymap.set('n', '<Leader>ff', '<cmd>lua vim.lsp.buf.format()<cr>', { silent = true })
 
 -- completion: refer to plugins completion.lua
+-- mapping for tree is defined in its configure file
 
+keymap.set('n', '[[', '')
+keymap.set('n', ']]', '')
+
+keymap.set('n', '<Leader>,', '<cmd>ToggleDiag<cr>', { silent = true })

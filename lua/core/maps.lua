@@ -31,6 +31,7 @@ keymap.set('n', 'L', '$')
 keymap.set('x', 'H', '^')
 keymap.set('x', 'L', '$')
 keymap.set('n', 'U', '<c-r>') -- redo
+keymap.set('n', 'rr', '<c-t>') -- redo
 
 keymap.set('i', 'jf', '<esc>', { silent = true })
 
